@@ -46,11 +46,6 @@ eventbrite: "42917392075"          # optional: alphanumeric key for Eventbrite r
 </iframe>
 {% endif %}
 
-<h4>This is the workshop template. Delete these lines and use it to customize your own website.
-If you are running a self-organized workshop or have not put in a workshop request yet, please also fill in 
-<a href="{{site.amy_site}}/submit">this workshop request form</a> to let us know about your workshop
-and our administrator may contact you if we need any extra information.</h4>
-
 <h2 id="general">General Information</h2>
 
 {% comment %}
@@ -73,6 +68,7 @@ and our administrator may contact you if we need any extra information.</h4>
   Explain who your audience is.  (In particular, tell readers if the
   workshop is only open to people from a particular institution.
 {% endcomment %}
+This workshop is for GW Graduate students, postdocs, and faculty who want to become more productive with lab skills for scientific computing. The workshop is free to any GW-affiliated participant.
 {% if page.carpentry == "swc" %}
   {% include sc/who.html %}
 {% elsif page.carpentry == "dc" %}
@@ -514,6 +510,7 @@ and our administrator may contact you if we need any extra information.</h4>
   </div>
 </div> {% comment %} End of 'editor' section. {% endcomment %}
 
+{% comment %}
 <div id="python"> {% comment %} Start of 'Python' section. Remove the third paragraph if
            the workshop will teach Python using something other than
            the Jupyter notebook.
@@ -606,6 +603,7 @@ and our administrator may contact you if we need any extra information.</h4>
   </p>
 {% endcomment %}
 </div> {% comment %} End of 'Python' section. {% endcomment %}
+{% endcomment %}
 
 <div id="r"> {% comment %} Start of 'R' section. {% endcomment %}
   <h3>R</h3>
@@ -658,6 +656,7 @@ and our administrator may contact you if we need any extra information.</h4>
   </div>
 </div> {% comment %} End of 'R' section. {% endcomment %}
 
+{% comment %}
 <div id="sql"> {% comment %} Start of 'SQLite' section. {% endcomment %}
   <h3>SQLite</h3>
 
@@ -750,6 +749,7 @@ and our administrator may contact you if we need any extra information.</h4>
     </div>
   </div>
 </div> {% comment %} End of 'OpenRefine' section. {% endcomment %}
+{% endcomment %}
 
 {% comment %}
 <div id="vm">
